@@ -6,10 +6,19 @@ cache:
 
 node_js:
   - node
-  - 'lts/*'
 
 install:
   - yarn install
-
 script:
   - yarn pack
+
+deploy:
+  provider: npm
+  email: stephen.neal14@gmail.com
+  api_key:
+    secure: suiIV60xIaqBnz1W1T5HhXUMTD5NcmZRZDRFbficLyvRVyj/XDGCLTaehO7LU+BznEK/vwy/INyYuSxuGzIenmizyDiLSzbknAvpOT//qxgRMm57P5D89vbLb1rqzRAb1Ro2bYJhLN45UD/AfnpNorx4AtlY+jfOVDOQdM25q4wbaQJu7t1N08V4qndDn8HCCLxZJcdQd7AzeaXElKQrlx5Q3KTl2Ophl+34qThgZ4Mw/rwSklTEOJ4qp2BhayziqRUK1VE6Qe/JL90upMG/oOf6w8vY8DPLdzNY0qsC6JdTdllPOAEdgHoLRYOsf/WJXkL22HUd/FAwxDF6wKsqoiWggtL44vj7NsucnHlqu18rsp2xIGNlYSW+JVuyibQ47CvegnSHNa2ttCXzBY+zzUkyf3LYGAOI/b6kP+jZFIuP3DQsunQKjdniU9LRkQk8c2KT6pZpsQafbvaUGFYK6ofknNLI+QkzFGIAJ9LB16jFZnDcTx7uQyk6Hvd7UYTUgpHs2cRjwEqD9DutKnL/vZwlD2KbnQvQ4IivTkNsH7+a255GkOksYSJAxGK3Y8LZkVurpBbpqTILdNC3H5sOqBXDHV9akoKOrLoqJmDZDBkv2AmtNZZViwken7VoPcM1WSfEteCnomdncN9URpnzEdSIMOGgEeRPHdMqRk/BjoY=
+  skip_existing: true
+  on:
+    tags: true
+    repo: sfneal/theme-amalgamate
+  skip_cleanup: 'true'
