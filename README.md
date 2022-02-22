@@ -1,2 +1,2 @@
-# unify
+# Unify Theme
 Unify theme scss
