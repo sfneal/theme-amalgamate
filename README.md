@@ -1,2 +1,2 @@
-# Unify SCSS
+# Theme Amalgamate
 Unify theme scss
