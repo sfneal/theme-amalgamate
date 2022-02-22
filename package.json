@@ -1,8 +1,8 @@
 {
-  "name": "unify-theme",
+  "name": "unify-scss",
   "version": "0.1.0",
   "description": "Unify scss theme",
-  "repository": "https://github.com/sfneal/unify-theme.git",
+  "repository": "https://github.com/sfneal/unify-scss.git",
   "author": "sfneal <stephen.neal14@gmail.com>",
   "license": "MIT",
   "files": ["src"]
